@@ -1,0 +1,53 @@
+/*Esta config va a todos los index de aca, hasta el final del menu*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(65, 61, 55);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    
+}
+
+/*Aca comienza todo el menu*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 5px 20px;
+    overflow: hidden;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.logo img {
+    height: 200px;
+}
+
+.barra ul {
+    list-style: none;
+    display: flex;
+}
+
+.barra ul li {
+    margin-left: 20px;
+}
+
+.barra ul li a {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.barra ul li a:hover {
+    text-decoration: none;
+    background-color: red;
+    padding: 10px 10px;
+    color: black;
+    border-radius: 12px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s; 
+    -o-transition: all 0.5s;
+}
+/*Aca termina todo el menu y misma configuración para los demas*/
