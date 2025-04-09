@@ -4,7 +4,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(65, 61, 55);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
     
 }
 
@@ -51,3 +50,16 @@ body {
     -o-transition: all 0.5s;
 }
 /*Aca termina todo el menu y misma configuración para los demas*/
+h1{
+    text-align: center;
+}
+
+.texto {
+    font-family: Arial, sans-serif;
+    }
+    
+.inicio {
+    max-width: 50%;
+    height: auto;
+    }
+    
