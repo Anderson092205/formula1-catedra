@@ -13,22 +13,22 @@
 .logo img {
     height: 200px;
 }
- 
+
 .barra ul {
     list-style: none;
     display: flex;
 }
- 
+
 .barra ul li {
     margin-left: 20px;
 }
- 
+
 .barra ul li a {
     color: red;
     text-decoration: none;
     font-size: 20px;
 }
- 
+
 .barra ul li a:hover {
     text-decoration: none;
     background-color: red;
@@ -40,6 +40,7 @@
     -moz-transition: all 0.5s; 
     -o-transition: all 0.5s;
 }
+/*Aca termina todo el menu y misma configuración para los demas*/
 
 /* Estilo General */
 * {
@@ -55,90 +56,85 @@ body {
     font-family: 'Arial', sans-serif;
     color: white;
 }
- 
-/* Estilo general para el fondo */
+
+/* Estilo del header */
+header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #e50914;
+}
+
+/* Estilo de los artículos de pistas */
 section {
-    background-color: #1e1e1e; /* Fondo oscuro para dar contraste */
-    color: white; /* Color blanco para los textos */
-    display: grid;
+    padding: 20px;
+    display: grid; /* Usamos grid para las columnas */
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 20px; /* Espacio entre las imágenes/artículos */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Sombra de contenedor */
- 
-
+    gap: 30px; /* Espacio entre las columnas */
 }
 
-/* Estilo para los artículos (los bloques de contenido) */
 .article-fade {
-    background-color: #222; /* Fondo oscuro para los artículos */
-    padding: 20px;
+    background-color: #333;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil */
-    position: relative;
-    overflow: hidden; /* Para ocultar el borde si es necesario */
-    transition: transform 0.3s ease-in-out; /* Animación al pasar el mouse */
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
- 
+
 .article-fade:hover {
-    transform: scale(1.05); /* Aumentar ligeramente el tamaño del artículo al pasar el ratón */
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
- 
 
-
- 
-
-/* Títulos dentro de los artículos */
-article h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    color: #ffcc00; /* Color de texto dorado similar a los trofeos de F1 */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para los títulos */
-}
- 
-/* Estilo para las imágenes */
-article img {
-    width: 100%; /* Las imágenes ocupan el 100% del ancho disponible */
-    height: 350px; /* Aumentamos la altura para que las imágenes sean más grandes */
-    object-fit: cover; /* Asegura que las imágenes se ajusten sin deformarse, recortando si es necesario */
+.article-fade img {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
-    border: 2px solid #ff0000; /* Borde rojo para dar contraste */
-    background-color: white; /* Fondo blanco */
-    padding: 10px; /* Espacio entre la imagen y el borde */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
-    display: block;
-    transition: transform 0.3s ease-in-out; /* Animación de transición en las imágenes */
+    background-color: white;
+    transition: transform 0.3s ease;
 }
 
-/* Efecto hover en las imágenes */
-article img:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el ratón */
+.article-fade img:hover {
+    transform: scale(1.05);
 }
- 
-/* Párrafos dentro de los artículos */
-article p {
-    font-size: 1rem;
+
+/* Estilo de los títulos de cada circuito */
+.article-fade h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffcc00;
     margin-bottom: 10px;
-    font-family: 'Arial', sans-serif;
 }
- 
-/* Animación de aparición para los artículos */
-.article-fade {
-    opacity: 0;
-    animation: fadeIn 0.8s ease-in-out forwards;
+
+/* Estilo de los párrafos dentro de cada artículo */
+.article-fade p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
 }
- 
-@keyframes fadeIn {
- 
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
- 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+
+/* Estilo de la línea horizontal */
+hr {
+    border: 0;
+    border-top: 2px solid #e50914;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de transición para efectos suaves */
+article {
+    transition: all 0.3s ease;
+}
+
+article:hover {
+    background-color: #222;
+}
+
+
+
