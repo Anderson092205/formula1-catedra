@@ -1,17 +1,3 @@
-/*Esta config va a todos los index de aca, hasta el final del menu*/
-*{
-    padding: 0px;
-    margin: 10px;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgb(65, 61, 55);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-}
-
 /*Aca comienza todo el menu*/
 .menu {
     display: flex;
@@ -33,10 +19,6 @@ body {
     display: flex;
 }
  
-
-
- 
-
 .barra ul li {
     margin-left: 20px;
 }
@@ -57,6 +39,21 @@ body {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s; 
     -o-transition: all 0.5s;
+}
+
+/* Estilo General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fondo oscuro y tipografía moderna */
+body {
+    background-color: #1b1b1b;
+    font-family: 'Arial', sans-serif;
+    color: white;
 }
  
 /* Estilo general para el fondo */
