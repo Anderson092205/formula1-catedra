@@ -103,8 +103,8 @@ article h3 {
  
 /* Estilo para las imágenes */
 article img {
-    width: 800px; /* Las imágenes ocupan el 100% del ancho disponible */
-    height: 500px; /* Aumentamos la altura para que las imágenes sean más grandes */
+    width: 100%; /* Las imágenes ocupan el 100% del ancho disponible */
+    height: 350px; /* Aumentamos la altura para que las imágenes sean más grandes */
     object-fit: cover; /* Asegura que las imágenes se ajusten sin deformarse, recortando si es necesario */
     border-radius: 8px;
     margin-bottom: 15px;
