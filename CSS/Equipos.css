@@ -1,12 +1,3 @@
-/*Esta config va a todos los index de aca, hasta el final del menu*/
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: rgb(65, 61, 55);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    
-}
 
 /*Aca comienza todo el menu*/
 .menu {
@@ -51,3 +42,85 @@ body {
     -o-transition: all 0.5s;
 }
 /*Aca termina todo el menu y misma configuración para los demas*/
+
+/* Estilo General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fondo oscuro y tipografía moderna */
+body {
+    background-color: #1b1b1b;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* Estilo del header */
+header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #e50914;
+}
+
+/* Estilo de las tarjetas de los equipos */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 10%;
+}
+
+.container div {
+    width: 250px;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #e50914;
+}
+
+.container div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+}
+
+.container div img {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.container div h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.container div p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+/* Efectos para las imágenes de los equipos */
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
