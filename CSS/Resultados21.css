@@ -51,3 +51,12 @@ body {
     -o-transition: all 0.5s;
 }
 /*Aca termina todo el menu y misma configuración para los demas*/
+
+footer{
+    background-color: black;
+    color: red;
+    font-size: 20px;    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}

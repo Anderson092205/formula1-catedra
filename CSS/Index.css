@@ -129,5 +129,14 @@ article {
 
 article:hover {
     background-color: #222;
+
 }
-    
+  
+footer{
+    background-color: black;
+    color: red;
+    font-size: 20px;    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
