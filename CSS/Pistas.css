@@ -102,6 +102,7 @@ section {
 
 .article-fade img:hover {
     transform: scale(1.05);
+    transition: all 1s;
 }
 
 /* Estilo de los títulos de cada circuito */
