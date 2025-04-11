@@ -188,3 +188,33 @@ footer{
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
     font-family: Arial, sans-serif;
 }
+
+/* Estilo para títulos y listas dentro del aside */
+.contenido-principal aside h2,
+.contenido-principal aside h3 {
+    color: #ffcc00;
+}
+
+.contenido-principal aside ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.contenido-principal aside li {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenido-principal {
+        flex-direction: column;
+    }
+
+    .contenido-principal aside {
+        max-width: 100%;
+        margin-top: 20px;
+        border-left: none;
+        border-top: 5px solid red;
+    }
+}
