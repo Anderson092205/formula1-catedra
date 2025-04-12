@@ -57,6 +57,13 @@ header {
     margin: 40px 0;
 }
 
+hr {
+    border: 0;
+    border-top: 2px solid #e50914;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 header h1 {
     font-size: 36px;
     font-weight: bold;
@@ -109,7 +116,7 @@ header h1 {
     color: #ddd;
 }
 
-/* Efectos para las imágenes de los equipos */
+/* Efectos para las imágenes de los pilotos */
 img {
     transition: transform 0.3s ease;
 }

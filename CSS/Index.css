@@ -64,7 +64,7 @@ header h1 {
 }
 
 
-/* Estilo de los artículos de pistas */
+/* Estilo de los artículos*/
 section {
     padding: 20px;
     display: grid; /* Usamos grid para las columnas */
@@ -99,7 +99,7 @@ section {
     transition: all 1s;
 }
 
-/* Estilo de los títulos de cada circuito */
+/* Estilo de los títulos de cada caja de información */
 .texto h2 {
     font-size: 26px;
     font-weight: bold;

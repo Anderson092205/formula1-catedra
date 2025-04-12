@@ -4,9 +4,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(30, 30, 29);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    
 }
+
 
 /*Aca comienza todo el menu*/
 .menu {
@@ -52,11 +51,159 @@ body {
 }
 /*Aca termina todo el menu y misma configuración para los demas*/
 
+header{
+    text-align: center;
+    color: #e50914;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #e50914;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Esto es para los podios de arriba*/
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.podium div {
+    width: 150px;
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.podium div:hover {
+    transform: translateY(-20px);
+}
+
+.podium img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid;
+}
+
+.first {
+    height: 200px;
+    background-color: gold;
+}
+
+.first img {
+    border-color: gold;
+}
+
+.second {
+    height: 150px;
+    background-color: silver;
+}
+
+.second img {
+    border-color: silver;
+}
+
+.third {
+    height: 100px;
+    background-color: #cd7f32;
+}
+
+.third img {
+    border-color: #cd7f32;
+}
+
+/*Esto es para los resultados de temp*/
+.results {
+    margin: 50px auto; 
+    color: white;
+    width: 80%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centrar en vertical*/
+}
+
+    
+
+.results h1, .results h2 {
+    text-align: center;
+}
+
+.results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results li {
+    margin: 10px 0;
+}
+
+section {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; 
+}
+
+.result-box {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.result-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.result-box h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.result-box p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #e50914;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article {
+    transition: all 0.3s ease;
+}
+
+article:hover {
+    background-color: #222;
+}
+    
 footer{
     background-color: black;
     color: red;
     font-size: 20px;    
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
+    margin-top: 1px;
 }
