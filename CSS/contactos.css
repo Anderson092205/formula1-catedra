@@ -1,0 +1,157 @@
+/* Estilos del menú */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: red;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: red;
+    color: black;
+    border-radius: 12px;
+}
+
+/* Menú hamburguesa */
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    color: red;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        display: none;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    .nav-links hr {
+    margin: 2px 0;
+    border: 1px solid red;
+    }
+
+    .nav-links li {
+    margin: 0;
+    padding: 2px 0;
+    }
+
+}
+
+/*Aca termina todo el menu y misma configuración para los demas*/
+
+/* Estilo General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin: 40px 0;
+}
+hr {
+    border: 0;
+    border-top: 2px solid #e50914;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: red;
+}
+
+/*Estilos para todas lás páginas*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(30, 30, 29);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+
+.boton a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: black;
+    color: red;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton a:hover {
+    background-color: red;
+    color: black;
+    transition: all 0.5;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (min-width: 1200px) {
+  .col-xl-2-4 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
