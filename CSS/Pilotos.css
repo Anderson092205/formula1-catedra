@@ -182,3 +182,87 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
 }
+
+.toggle-info {
+  display: none;
+}
+
+.ver-mas-label {
+  display: block;
+  margin: 10px auto;
+  background-color: #e50914;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.ver-mas-label:hover {
+  background-color: #ff3333;
+}
+
+.info-extra {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+}
+
+.toggle-info:checked + .ver-mas-label + .info-extra {
+  display: block;
+}
+
+.info-extra {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+  max-width: 100%;
+  word-wrap: break-word; 
+}
+
+/* Colores personalizados por escudería aplicados a los nombres de las escuderías (h2) */
+h2.mercedes {
+    color: #00D2BE;
+}
+
+h2.redbull {
+    color: #1E41FF;
+}
+
+h2.mclaren {
+    color: #FF8700;
+}
+
+h2.ferrari {
+    color: #DC0000;
+}
+
+h2.alpine {
+    color: #0090FF;
+}
+
+h2.aston {
+    color: #006F62;
+}
+
+h2.alphatauri {
+    color: #2B4562;
+}
+
+h2.alfaromeo {
+    color: #900000;
+}
+
+h2.haas {
+    color: #5A5A5A;
+}
+
+h2.williams {
+    color: #00A3E0;
+}
