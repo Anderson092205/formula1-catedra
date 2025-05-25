@@ -195,7 +195,9 @@ div h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Centrar en vertical*/
+    flex-direction: column; 
+    min-height: 300px; 
+    height: auto;      
 }
 
     
@@ -282,3 +284,4 @@ footer{
         font-size: 16px;
     }
 }
+
