@@ -112,7 +112,7 @@ header h1 {
     letter-spacing: 5px;
     color: red;
 }
-/*Estilo del video*/
+/* Estilo del video */
 .video-intro {
     display: flex;
     justify-content: center;
@@ -124,7 +124,10 @@ header h1 {
     max-width: 800px;
     aspect-ratio: 16 / 9;
     border: none;
+    box-shadow: 0 8px 24px rgb(255, 15, 15); /* sombra suave */
+    border-radius: 8px; /* opcional: bordes redondeados */
 }
+
 
 
 /* Estilo de los artículos*/

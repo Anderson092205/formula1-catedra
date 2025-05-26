@@ -190,8 +190,8 @@ footer{
     display: inline-block;
     margin-top: 10px;
     padding: 8px 12px;
-    background-color: #ffcc00;
-    color: #000;
+    background-color: red;
+    color: black;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -199,7 +199,8 @@ footer{
 }
 
 .ver-mas-label:hover {
-    background-color: #e6b800;
+    background-color: black;
+    color: red;
 }
 
 /* Cuadro desplegable oculto por defecto */
