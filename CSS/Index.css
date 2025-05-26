@@ -112,6 +112,19 @@ header h1 {
     letter-spacing: 5px;
     color: red;
 }
+/*Estilo del video*/
+.video-intro {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.video-intro iframe {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
 
 
 /* Estilo de los artículos*/
@@ -181,7 +194,25 @@ article:hover {
     background-color: #222;
 
 }
-  
+
+/*Boton de ver más*/
+.ver-mas {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: red;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ver-mas:hover {
+  background-color: black;
+  transform: scale(1.05);
+  color: red;
+}
+
 footer{
     background-color: black;
     color: red;
