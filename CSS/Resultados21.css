@@ -285,3 +285,42 @@ footer{
     }
 }
 
+.result-box ul li {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    background-color: #444;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+/* Animación escalonada para cada línea */
+.result-box ul li:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+
+.result-box ul li:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+.result-box ul li:hover {
+    background-color: #555;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Definición de la animación */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
