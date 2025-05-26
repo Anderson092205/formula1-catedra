@@ -46,7 +46,7 @@
     display: none;
 }
 
-/* Responsive */
+/* Responsive navbar */
 @media (max-width: 768px) {
     .nav-links {
         flex-direction: column;
@@ -61,6 +61,7 @@
     .nav-links li {
         text-align: center;
         padding: 10px 0;
+        margin: 0;
     }
 
     #menu-toggle:checked + .menu-icon + .nav-links {
@@ -70,41 +71,32 @@
     .menu-icon {
         display: block;
     }
+
     .nav-links hr {
-    margin: 2px 0;
-    border: 1px solid red;
+        margin: 2px 0;
+        border: 1px solid red;
     }
-
-    .nav-links li {
-    margin: 0;
-    padding: 2px 0;
-    }
-
 }
 
-
-/*Aca termina todo el menu y misma configuración para los demas*/
-
-/* Estilo General */
+/* Reset general */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 /* Fondo oscuro y tipografía moderna */
 body {
     background-color: rgb(30, 30, 29);
     font-family: 'Arial', sans-serif;
     color: white;
+    overflow-x: hidden; /* ✅ Evita scroll horizontal */
 }
 
 /* Estilo del header */
 header {
     text-align: center;
-    margin: 40px 0;
-    margin-top: 0px;
+    margin: 40px 0 0;
 }
 
 header h1 {
@@ -115,14 +107,23 @@ header h1 {
     color: #e50914;
 }
 
-/* Estilo de los artículos de pistas */
-section {
-    padding: 20px;
-    display: grid; /* Usamos grid para las columnas */
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 30px; /* Espacio entre las columnas */
+/* Estilo de la línea horizontal */
+hr {
+    border: 0;
+    border-top: 2px solid #e50914;
+    margin: 20px auto;
+    width: 80%;
 }
 
+/* Sección principal: rejilla de pistas */
+section {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 30px;
+}
+
+/* Artículos individuales */
 .article-fade {
     background-color: #333;
     border-radius: 8px;
@@ -146,10 +147,9 @@ section {
 
 .article-fade img:hover {
     transform: scale(1.05);
-    transition: all 1s;
 }
 
-/* Estilo de los títulos de cada circuito */
+/* Títulos de los circuitos */
 .article-fade h3 {
     font-size: 26px;
     font-weight: bold;
@@ -157,45 +157,14 @@ section {
     margin-bottom: 10px;
 }
 
-/* Estilo de los párrafos dentro de cada artículo */
+/* Texto de los artículos */
 .article-fade p {
     font-size: 16px;
     color: #ddd;
     margin-bottom: 10px;
 }
 
-/* Estilo de la línea horizontal */
-hr {
-    border: 0;
-    border-top: 2px solid #e50914;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-/* Estilos de transición para efectos suaves */
-article {
-    transition: all 0.3s ease;
-}
-
-article:hover {
-    background-color: #222;
-}
-
-footer{
-    background-color: black;
-    color: red;
-    font-size: 20px;    
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-}
-
-/* Oculta el checkbox */
-.toggle-info {
-    display: none;
-}
-
-/* Estilo del botón */
+/* Botón ver más */
 .ver-mas-btn {
     display: inline-block;
     margin-top: 10px;
@@ -213,18 +182,61 @@ footer{
     color: red;
 }
 
-/* Contenedor oculto por defecto */
+/* Ocultar el checkbox */
+.toggle-info {
+    display: none;
+}
+
+/* Contenido adicional oculto */
 .info-extra {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, padding 0.3s ease;
-    padding: 0 0;
+    padding: 0;
+    font-size: 14px;
+    color: #ccc;
+    text-align: justify;
 }
 
 /* Mostrar contenido cuando el checkbox está marcado */
 .toggle-info:checked + .ver-mas-btn + .info-extra {
-    max-height: 500px; /* Ajusta según el contenido */
+    max-height: 500px;
     padding: 10px 0;
 }
 
+/* Footer */
+footer {
+    background-color: black;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    padding: 15px;
+}
 
+/* MEDIA QUERIES RESPONSIVAS */
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr; /* ✅ Solo una columna en móvil */
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .article-fade h3 {
+        font-size: 20px;
+    }
+
+    .article-fade p {
+        font-size: 14px;
+    }
+
+    .ver-mas-btn {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
