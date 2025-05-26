@@ -102,6 +102,7 @@ body {
 header {
     text-align: center;
     margin: 40px 0;
+    margin-top: 0px;
 }
 
 header h1 {
